@@ -1,0 +1,21 @@
+insert into Trains values ('Black','Locomotive','Diesel', 500000)
+insert into Trains values ('Green','Passenger','Electric', 1400000)
+insert into Trains values ('Blue','High-Speed Rail','Gasoline', 1000000)
+insert into Trains values ('Orange','Inter-City','Electric', 400000)
+insert into Trains values ('Purple','Regional','Gasoline', 1200000)
+insert into Trains values ('White','Short-Distance ','Diesel', 3500000)
+insert into Trains values ('Blue','Commuter','Steam', 2000000)
+insert into Trains values ('Black','Railcar','Steam', 5500000)
+insert into Trains values ('Green','Freight  ','Diesel', 3500000)
+insert into Trains values ('Blue','Commuter','Steam', 2530000)
+insert into Trains values ('White','Monorail','Electric', 5350000)
+
+
+
+
+
+
+create proc spSearchTrains
+as 
+select * from Trains
+go;
