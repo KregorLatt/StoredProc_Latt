@@ -1,0 +1,57 @@
+﻿<body style="padding-top: 10px">
+    <div class="col-xs-8 col-xs-offset-2">
+        <div class="panel-heading">
+            <h3>Train Search Form</h3>
+        </div>
+        <form asp-controller="Train" asp-action="DynamicSQL">
+            <div>
+                <label for="color">Color</label>
+                <br />
+                <input type="text" name="Color" placeholder="Color" />
+            </div>
+            <br />
+            <div>
+                <label for="brand">Brand</label>
+                <br />
+                <input type="text" name="Brand" placeholder="Brand" />
+            </div>
+            <br />
+            <div>
+                <label for="fuel">Fuel</label>
+                <br />
+                <select name="fuel">
+                    <option value="diesel">Diesel</option>
+                    <option value="gasoline">Gasoline</option>
+                </select>
+            </div>
+            <br />
+            <div>
+                <label for="price">Price</label>
+                <br />
+                <input type="number" name="Prce" placeholder="" />
+            </div>
+            <br />
+            <input type="submit" value="sumbit" />
+        </form>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Color</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Fuel</th>
+                    <th scope="col">Price</th>
+                </tr>
+            <tbody>
+                    @foreach (var Train in Model)
+                    {
+                    <tr>
+                        <td>@Train.Color</td>
+                        <td>@Train.Brand</td>
+                        <td>@Train.Fuel</td>
+                        <td>@Train.Price</td>
+                    </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+</body>

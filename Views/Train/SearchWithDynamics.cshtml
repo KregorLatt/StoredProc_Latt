@@ -1,0 +1,57 @@
+﻿<body style="padding-top: 10px">
+    <div class="col-xs-8 col-xs-offset-2">
+        <div class="panel-heading">
+            <h3>Train Search Form With Dynamic</h3>
+        </div>
+        <form asp-controller="Train" asp-action="SearchWithDynamics">
+            <div>
+                <label for="color">Color</label>
+                <br />
+                <input type="text" name="color" placeholder="Color" />
+            </div>
+            <br />
+            <div>
+                <label for="brand">Brand</label>
+                <br />
+                <input type="text" name="brand" placeholder="Brand" />
+            </div>
+            <br />
+            <div>
+                <label for="fuel">Fuel</label>
+                <br />
+                <select name="fuel">
+                    <option value="diesel">Diesel</option>
+                    <option value="gasoline">Gasoline</option>
+                </select>
+            </div>
+            <br />
+            <div>
+                <label for="price">SearchWithDynamics</label>
+                <br />
+                <input type="number" name="SearchWithDynamics" placeholder="SearchWithDynamics" />
+            </div>
+            <br />
+            <input type="submit" value="SearchWithDynamics" />
+        </form>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Color</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Fuel</th>
+                    <th scope="col">Price</th>
+                </tr>
+            <tbody>
+                    @foreach (var Train in Model)
+                    {
+                    <tr>
+                        <td>@Train.Color</td>
+                        <td>@Train.Brand</td>
+                        <td>@Train.Fuel</td>
+                        <td>@Train.Price</td>
+                    </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+</body>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoredProc_Latt", "StoredProc_Latt.csproj", "{90086A51-B1CB-4A42-9D44-DEB102CBA057}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90086A51-B1CB-4A42-9D44-DEB102CBA057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90086A51-B1CB-4A42-9D44-DEB102CBA057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90086A51-B1CB-4A42-9D44-DEB102CBA057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90086A51-B1CB-4A42-9D44-DEB102CBA057}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F846B8E-F7E6-4103-B12F-602770C29A48}
+	EndGlobalSection
+EndGlobal
